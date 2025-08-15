@@ -1,0 +1,36 @@
+---
+import '../styles/global.css';
+---
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="generator" content={Astro.generator}/>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Jorge Khabazze, Full Stack Software Engineer specializing in AWS, scalable architectures, and clean code practices." />
+    <meta name="keywords" content="Jorge Khabazze, Software Engineer, Full Stack Developer, AWS, TypeScript, Cloud Computing, Caracas, Remote Work" />
+    <meta name="author" content="Jorge Khabazze" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Jorge Khabazze Full Stack Software Engineer" />
+    <meta property="og:description" content="Explore my work, skills, and experience in scalable application development and cloud architecture." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.request.url} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jorge Khabazze Full Stack Software Engineer" />
+    <meta name="twitter:description" content="AWS & cloud solutions expert — crafting scalable, secure, and efficient systems." />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+
+    <title>Jorge Khabazze</title>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+<main class="max-w-4xl mx-auto px-6 py-12">
+    <slot/>
+</main>
+</body>
+</html>
